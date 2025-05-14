@@ -1,0 +1,7 @@
+secrets
+hashlib
+base64
+time
+requests
+typing
+python-jose
