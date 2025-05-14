@@ -1,5 +1,7 @@
 ## this is code to protect against cross-site scripting (XSS, R-XSS)
 
+### cross-site scripting can be found by trying to inject scripts through inputs, get and post methods, URL parameters, and more
+
 ### Features: 
 - input validation and sanitization through rejection of html/Javascript syntax, special characters
 - content security policy to restrict script sources to trusted domains
