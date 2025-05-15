@@ -1,4 +1,6 @@
-### This is code to combat common OAuth misconfigurations such as token leakage, account takeover, and such. The code is general as it needs to be tailored to the specifics of the website of implementation
+### OAuth misconfigurations
+
+This is code to combat common OAuth misconfigurations such as token leakage, account takeover, and such. The code is general as it needs to be tailored to the specifics of the website of implementation
 
 <br>
 
