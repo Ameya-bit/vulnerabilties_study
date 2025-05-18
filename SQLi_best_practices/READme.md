@@ -1,12 +1,17 @@
-# SQL Injection Defense in Rust Web Applications  
+# SQL Injection Defense in Rust Web Applications   
+<br>
+
 **Last Updated**: May 2025  
 **Rust Version**: 1.86.0  
 
 A reference implementation for preventing SQL injection (SQLi) in Rust web apps, combining compile-time safety, ORM best practices, and defense-in-depth strategies.
 
 ---
+<br>
 
 ## Key Features  
+<br> 
+
 ✅ **Parameterized Queries** (SQLx macros, Diesel ORM)  
 ✅ **Input Validation** (libinjection pattern matching)  
 ✅ **TLS Encryption** (Secure PostgreSQL connections)  
@@ -15,8 +20,11 @@ A reference implementation for preventing SQL injection (SQLi) in Rust web apps,
 ✅ **Anti-Pattern Examples** (Safe vs unsafe code comparisons)  
 
 ---
+<br>
 
 ## Installation  
+<br>
+
 ```
 [dependencies]
 sqlx = { version = "0.7", features = ["postgres", "tracing"] }
@@ -26,8 +34,11 @@ tracing = "0.2"
 ```
 
 ---
+<br>
 
 ## Usage  
+<br>
+
 
 ### 1. Database Setup  
 
@@ -37,6 +48,7 @@ CREATE ROLE web_user WITH LOGIN PASSWORD 'secure';
 GRANT SELECT, INSERT ON users TO web_user;
 REVOKE DELETE, DROP ON ALL TABLES FROM web_user;
 ```
+<br>
 
 ### 2. Secure User Creation  
 **SQLx (Async):**
@@ -53,7 +65,7 @@ create_user_sqlx(&pool, "alice", "alice@example.com").await?;
 let mut conn = create_diesel_conn("postgres://web_user:secure@localhost/db")?;
 create_user_diesel(&mut conn, "bob", "bob@example.com")?;
 ```
-
+<br>
 
 ### 3. Input Validation  
 
@@ -63,8 +75,10 @@ validate_input(user_input)?; // Rejects ' OR 1=1--
 
 
 ---
+<br>
 
 ## Security Deep Dive  
+<br>
 
 ### Prevention Layers  
 | Layer                | Implementation                          | Attack Mitigated          |
@@ -75,8 +89,10 @@ validate_input(user_input)?; // Rejects ' OR 1=1--
 | **Transport Security**| TLS via `PgSslMode::Require`           | Network sniffing          |
 
 ---
+<br>
 
 ## SQLx vs Diesel: Security Tradeoffs  
+<br>
 
 | Scenario              | SQLx Advantage                          | Diesel Advantage                 |
 |-----------------------|-----------------------------------------|-----------------------------------|
@@ -86,8 +102,10 @@ validate_input(user_input)?; // Rejects ' OR 1=1--
 | Injection Protection  | Compile-time query checking             | Zero raw SQL exposure             |
 
 ---
+<br>
 
 ## Anti-Patterns to Avoid  
+<br>
 
 ❌ **Raw SQL Concatenation**  
 
@@ -106,8 +124,10 @@ users.filter(name.eq(input)).first::<User>(conn)?;
 
 
 ---
+<br>
 
 ## Monitoring & RBAC  
+<br>
 
 ### Query Analysis  
 
@@ -127,8 +147,11 @@ REVOKE EXECUTE ON PROCEDURE create_user FROM web_user;
 
 
 ---
+<br>
 
 ## References  
+<br>
+
 1. [OWASP SQL Injection Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)  
 2. [SQLx Runtime Safety Documentation](https://docs.rs/sqlx/latest/sqlx/)  
 3. [Diesel Query Builder Best Practices](https://diesel.rs/guides/)  
