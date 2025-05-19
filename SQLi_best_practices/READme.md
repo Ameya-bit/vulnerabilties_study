@@ -1,10 +1,13 @@
-# SQL Injection Defense in Rust Web Applications  
+# SQL Injection Defense in Rust Web Applications   
+<br>
+
 **Last Updated**: May 2025  
 **Rust Version**: 1.86.0  
 
 A reference implementation for preventing SQL injection (SQLi) in Rust web apps, combining compile-time safety, ORM best practices, and defense-in-depth strategies.
 
 ---
+<br>
 
 ## Key Features  
 - **Parameterized Queries** (SQLx macros, Diesel ORM)  
@@ -15,6 +18,7 @@ A reference implementation for preventing SQL injection (SQLi) in Rust web apps,
 - **Anti-Pattern Examples** (Safe vs unsafe code comparisons)  
 
 ---
+<br>
 
 ## Installation  
 Add to your `Cargo.toml`:
@@ -30,8 +34,11 @@ dotenvy = "0.15"
 
 
 ---
+<br>
 
 ## Usage  
+<br>
+
 
 ### 1. Database Setup  
 
@@ -43,6 +50,7 @@ CREATE ROLE web_user WITH LOGIN PASSWORD 'secure';
 GRANT SELECT, INSERT ON users TO web_user;
 REVOKE DELETE, DROP ON ALL TABLES FROM web_user;\
 ```
+<br>
 
 
 ### 2. Running the Example
@@ -90,7 +98,7 @@ create_user_sqlx(&pool, "alice", "alice@example.com").await?;
 let mut conn = create_diesel_conn("postgres://web_user:secure@localhost/sqlidemo_test")?;
 create_user_diesel(&mut conn, "bob", "bob@example.com")?;
 ```
-
+<br>
 
 ---
 
@@ -104,6 +112,7 @@ validate_input(user_input)?; // Rejects ' OR 1=1--
 - Uses a regex pattern to block common SQLi signatures and dangerous input.
 
 ---
+<br>
 
 ### 5. Security Deep Dive  
 
@@ -116,6 +125,7 @@ validate_input(user_input)?; // Rejects ' OR 1=1--
 | **Transport Security**| TLS via `PgSslMode` (optional)         | Network sniffing          |
 
 ---
+<br>
 
 ### 6. SQLx vs Diesel: Security Tradeoffs  
 
@@ -127,6 +137,7 @@ validate_input(user_input)?; // Rejects ' OR 1=1--
 | Injection Protection  | Compile-time query checking             | Zero raw SQL exposure            |
 
 ---
+<br>
 
 ### 7. Anti-Patterns to Avoid  
 
@@ -148,6 +159,7 @@ users.filter(name.eq(input)).first::<User>(conn)?;
 
 
 ---
+<br>
 
 ### 8. Monitoring & RBAC  
 
@@ -198,8 +210,11 @@ Potential UNION attack: SELECT * FROM users WHERE id=1; UNION SELECT * FROM secr
 
 
 ---
+<br>
 
 ## References  
+<br>
+
 1. [OWASP SQL Injection Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)  
 2. [SQLx Runtime Safety Documentation](https://docs.rs/sqlx/latest/sqlx/)  
 3. [Diesel Query Builder Best Practices](https://diesel.rs/guides/)  
