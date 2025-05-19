@@ -91,7 +91,7 @@ create_user_sqlx(&pool, "alice", "alice@example.com").await?;
 
 **Diesel (Sync):**
 
-```
+
 
 
 ```
