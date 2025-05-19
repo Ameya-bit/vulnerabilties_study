@@ -1,0 +1,13 @@
+[package]
+name = "sqli_best_practices"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+sqlx = { version = "0.8.1", features = ["postgres", "runtime-tokio-native-tls", "macros", "migrate"] }
+diesel = { version = "2.1.0", features = ["postgres", "r2d2", "chrono"] }
+regex = "1.10.3"  # Latest stable regex
+tracing = "*"
+dotenvy = "*"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+tracing-subscriber = "0.3"
