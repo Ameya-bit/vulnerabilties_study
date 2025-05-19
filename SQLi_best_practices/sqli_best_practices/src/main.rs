@@ -201,7 +201,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
 
     // Connect to test database
     let test_url = format!(
-        "postgres://myappuser:Unoknowpw@localhost:5432/{}",
+        "postgres://myappuser:<password>@localhost:5432/{}",
         test_db
     );
     let pool = create_sqlx_pool(&test_url).await?;
