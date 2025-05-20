@@ -1,0 +1,11 @@
+[package]
+name = "open_redirects_best_practices"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web = "4"
+url = "2"
+env_logger = "0.11"
+log = "0.4"
+

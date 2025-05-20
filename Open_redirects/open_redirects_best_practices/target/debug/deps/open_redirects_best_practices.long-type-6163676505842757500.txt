@@ -1,0 +1,1 @@
+middleware::from_fn::MiddlewareFn<fn(ServiceRequest, Next<_>) -> impl std::future::Future<Output = Result<ServiceResponse<{type error}>, actix_web::Error>> {redirect_guard::<_>}, _>

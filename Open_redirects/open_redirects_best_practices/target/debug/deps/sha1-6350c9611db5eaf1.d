@@ -1,0 +1,10 @@
+C:\Users\ameya\Projects-Summer2025\vulnerabilties_study\Open_redirects\open_redirects_best_practices\target\debug\deps\libsha1-6350c9611db5eaf1.rmeta: C:\Users\ameya\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha1-0.10.6\src\lib.rs C:\Users\ameya\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha1-0.10.6\src\compress.rs C:\Users\ameya\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha1-0.10.6\src\compress\soft.rs C:\Users\ameya\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha1-0.10.6\src\compress\x86.rs
+
+C:\Users\ameya\Projects-Summer2025\vulnerabilties_study\Open_redirects\open_redirects_best_practices\target\debug\deps\libsha1-6350c9611db5eaf1.rlib: C:\Users\ameya\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha1-0.10.6\src\lib.rs C:\Users\ameya\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha1-0.10.6\src\compress.rs C:\Users\ameya\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha1-0.10.6\src\compress\soft.rs C:\Users\ameya\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha1-0.10.6\src\compress\x86.rs
+
+C:\Users\ameya\Projects-Summer2025\vulnerabilties_study\Open_redirects\open_redirects_best_practices\target\debug\deps\sha1-6350c9611db5eaf1.d: C:\Users\ameya\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha1-0.10.6\src\lib.rs C:\Users\ameya\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha1-0.10.6\src\compress.rs C:\Users\ameya\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha1-0.10.6\src\compress\soft.rs C:\Users\ameya\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha1-0.10.6\src\compress\x86.rs
+
+C:\Users\ameya\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha1-0.10.6\src\lib.rs:
+C:\Users\ameya\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha1-0.10.6\src\compress.rs:
+C:\Users\ameya\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha1-0.10.6\src\compress\soft.rs:
+C:\Users\ameya\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha1-0.10.6\src\compress\x86.rs:
