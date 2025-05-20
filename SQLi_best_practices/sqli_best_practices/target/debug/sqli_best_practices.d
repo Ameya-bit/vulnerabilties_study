@@ -1,1 +1,0 @@
-C:\Users\ameya\Projects-Summer2025\vulnerabilties_study\SQLi_best_practices\sqli_best_practices\target\debug\sqli_best_practices.exe: C:\Users\ameya\Projects-Summer2025\vulnerabilties_study\SQLi_best_practices\sqli_best_practices\src\main.rs C:\Users\ameya\Projects-Summer2025\vulnerabilties_study\SQLi_best_practices\sqli_best_practices\src\schema.rs
