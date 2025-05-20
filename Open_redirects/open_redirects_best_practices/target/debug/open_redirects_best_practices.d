@@ -1,1 +1,0 @@
-C:\Users\ameya\Projects-Summer2025\vulnerabilties_study\Open_redirects\open_redirects_best_practices\target\debug\open_redirects_best_practices.exe: C:\Users\ameya\Projects-Summer2025\vulnerabilties_study\Open_redirects\open_redirects_best_practices\src\main.rs

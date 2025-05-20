@@ -1,1 +1,0 @@
-fn(ServiceRequest, Next<ServiceRequest>) -> impl std::future::Future<Output = Result<HttpResponse, actix_web::Error>> {redirect_guard}: Transform<actix_web::app_service::AppRouting, ServiceRequest>
