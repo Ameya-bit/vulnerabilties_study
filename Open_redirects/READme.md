@@ -42,7 +42,7 @@ log = "0.4"
 
 ```
 git clone https://github.com/Ameya-bit/vulnerabilties_study
-cd rust-open-redirect-demo
+cd Open_redirects/open_redirects_best_practices
 ```
 
 
